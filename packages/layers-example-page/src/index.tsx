@@ -6,7 +6,7 @@ import { LayerPresense, LayerProvider } from '@howtolayers/layers-manager'
 import { NotificaitonsDisplayer, StoreProvider } from '@howtolayers/notifications'
 
 import { Button } from './components/Button'
-import { Navigation } from './Navigation'
+import { Navigation } from './navigation'
 
 const BaseContainer = styled.div`
   ${tw`pt-10 pl-10 relative grid gap-8 grid-cols-1`}
