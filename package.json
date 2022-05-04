@@ -1,0 +1,14 @@
+{
+  "name": "layers-react-poc",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.9.0"
+  },
+  "devDependencies": {
+    "@ythub/eslint-config": "^1.1.0",
+    "eslint": "^8.14.0"
+  }
+}

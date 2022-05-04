@@ -1,0 +1,9 @@
+{
+  "name": "@howtolayers/common-hooks",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "dependencies": {
+    "use-media": "^1.4.0"
+  }
+}
