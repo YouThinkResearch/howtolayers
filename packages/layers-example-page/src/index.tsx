@@ -7,6 +7,7 @@ import { NotificaitonsDisplayer, StoreProvider } from '@howtolayers/notification
 
 import { Button } from './components/Button'
 import { Navigation } from './navigation'
+import { useEffect } from 'react'
 
 const BaseContainer = styled.div`
   ${tw`pt-10 pl-10 relative grid gap-8 grid-cols-1`}
@@ -28,6 +29,17 @@ const GlobalStyles = () => (
 )
 
 export const LayersPage = () => {
+  useEffect(() => {
+    const handler = () => {
+      document.documentElement.style.setProperty('--1dvh', `${window.innerHeight * 0.01}px`)
+    }
+
+    handler()
+
+    window.addEventListener('resize', handler)
+
+    return () => window.removeEventListener('resize', handler)
+  }, [])
   return (
     <>
       <GlobalStyles />

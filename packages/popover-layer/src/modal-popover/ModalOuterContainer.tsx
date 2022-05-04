@@ -10,7 +10,7 @@ export const ModalOuterContainer = styled.div<{ mobile: boolean; zIndex: number;
     mobile
       ? `
     position: fixed;
-    max-height: calc(100vh - ${80 + zIndex * 2}px);
+    max-height: calc(var(--1dvh, 1vh) * 100 - ${80 + zIndex * 2}px);
     bottom: 0;
     width: 100%;
     height: 100vh;

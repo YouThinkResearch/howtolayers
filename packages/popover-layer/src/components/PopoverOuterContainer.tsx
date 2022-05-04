@@ -13,7 +13,7 @@ export const PopoverOuterContainer = styled.div<{
     mobile
       ? `
     position: fixed;
-    max-height: calc(100vh - 80px);
+    max-height: calc(var(--1dvh, 1vh) * 100 - 80px);
     height: ${height || '100vh'};
     width: 100vw;
     bottom: 0;
